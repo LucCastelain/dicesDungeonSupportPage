@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en" class="u-responsive-xl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+    <div class="fcf-body">
+        <div id="fcf-form">
+            <h3 class="fcf-h3">Dices Dungeon - Contact us</h3>
+            <form action="mailto:luc.castelain@icloud.com" source="email" name="form" id="fcf-form-id" class="fcf-form-class">
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" placeholder="Enter your Name" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your e-mail (e.g. example@example.com)" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea placeholder="Enter your message" rows="6" cols="50" id="Message" name="Message" class="fcf-form-control" required></textarea>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" onclick="showMailSentMessage()">Send message</button>
+                </div>
+                <!-- <div id="mail_sent" style="display: none">> Thank you! Your message has been sent. </div> -->
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- <script>
+    function showMailSentMessage() {
+        if(document.getElementById('Name').innerHTML != "" && document.getElementById('Email').innerHTML != "" && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById('Email').innerHTML) && document.getElementById('Message').innerHTML != "") {
+            document.getElementById('mail_sent').style.display = 'block';
+        }
+    }
+</script> -->
+
+</body>
+</html>
